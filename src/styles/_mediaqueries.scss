@@ -1,0 +1,37 @@
+@media (max-width: 956px) {
+    body {
+        font-size: $fontSizeSmall;
+    }
+
+    div {
+        margin: 0;
+    }
+
+    .menu {
+        ul {
+            display: block;
+
+            li {
+                padding: 0.5rem;
+                font-size: $fontSize;
+            }
+        }
+    }
+
+    main {
+        padding: 2rem 2rem 8rem 2rem;
+    }
+}
+
+@media (max-width: 911px) {
+    .menu {
+        justify-content: center;
+        flex-flow: row wrap;
+        gap: 0;
+
+        li {
+            flex-basis: 100%;
+            margin: 0 auto;
+        }
+    }
+}

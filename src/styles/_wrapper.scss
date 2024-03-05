@@ -1,0 +1,14 @@
+body {
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+    background-color: $lightGrey;
+}
+
+#root {
+    margin: 8rem auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1650px;
+}

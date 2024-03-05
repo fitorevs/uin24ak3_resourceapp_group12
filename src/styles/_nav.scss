@@ -1,0 +1,32 @@
+.menu {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+
+    li {
+        background-color: $darkBlue;
+        flex-grow: 1;
+        text-align: center;
+        padding: 2rem;
+        font-size: 1.5rem;
+        margin: 0;
+
+        a {
+            text-decoration: none;
+            color: $white;
+            font-weight: 900;
+        }
+    }
+}
+
+.active {
+    background-color: $white !important;
+
+    a {
+        color: $darkBlue !important;
+    }
+}
