@@ -2,9 +2,8 @@
 import { resources } from "./assets/ressurser"
 import { siteData } from './components/StructureCTX'
 import BuildRoutes from './components/BuildRoutes'
-import "./styles/main.scss"
-import './App.css'
 import './styles/main.scss'
+import './App.css'
 
 // Linje 9 til 35: Selve App funksjonen. Foruten å sette opp siteData er denne hovedsaklig benyttet for å kalle opp andre kompoenter.
 function App() {
@@ -18,7 +17,7 @@ function App() {
       // Linje 18 og 19: Midlertidig variable category for å holde denne verdien. Så må vi slette category nøkkelen fra resource for å ikke få med unødvendig data.
       const category = resource.category
       delete resource["category"]
-      
+
       // Linje 22 til 31: Vi undersøker om key (kategorien) allerede finnes. Hvis den finnes kan vi legge til den nye dataen i arrayen dens. Om ikke må vi lagre key verdien og sette opp en tom array.
       if (placeholder["key"].includes(category)) {
         // linje 24: resource blir lagt til i denne kategorien sin array. Alle verdier foruten category nøkkelen i rådataen.
@@ -34,7 +33,7 @@ function App() {
     // Linje 34: Sende ut placeholder objektet.
     return placeholder
   }
-  
+
   // Linje 38 til 44: Returner et JSX objekt hvilket tilsvarer nettsiden.
   return (
     // Linje 40 til 43: Wrap BuildRoutes komponentet i siteData sin provider. Hvilket betyr at alle komponenter som er hierarkisk innover får tilgang til verdien satt av denne context-en. Med value settes return-verdien til retrieveData funksjonen som verdi.

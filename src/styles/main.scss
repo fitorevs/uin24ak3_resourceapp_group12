@@ -20,7 +20,7 @@ div {
 }
 
 nav {
-    &.menu {
+    .menu {
         width: 100%;
         list-style-type: none;
         display: flex;
@@ -31,7 +31,6 @@ nav {
 
         li {
             background-color: $darkBlue;
-            color: $white;
             font-family: $roboto;
             flex-grow: 1;
             text-align: center;
@@ -40,9 +39,17 @@ nav {
             font-weight: 900;
             margin: 0;
 
+            a {
+                text-decoration: none;
+                color: $white;
+            }
+
             &.active {
                 background-color: $white;
-                color: $darkBlue;
+                
+                a {
+                    color: $darkBlue!important;
+                }
             }
         }
     }
