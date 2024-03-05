@@ -4,6 +4,7 @@ import { siteData } from './components/StructureCTX'
 import BuildRoutes from './components/BuildRoutes'
 import "./styles/main.scss"
 import './App.css'
+import './styles/main.scss'
 
 // Linje 9 til 35: Selve App funksjonen. Foruten å sette opp siteData er denne hovedsaklig benyttet for å kalle opp andre kompoenter.
 function App() {
