@@ -72,6 +72,6 @@ export const resources = [
     {
         title: "Section.io: Getting started with Sanity CMS",
         url: "https://www.section.io/engineering-education/getting-started-with-sanity-cms/",
-        category: "headless-cms"
+        category: "Headless-CMS"
     }
 ]
