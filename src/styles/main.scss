@@ -1,26 +1,8 @@
 //Midlertidig sass
-
-$darkBlue: #2A324B;
-$greyBlue: #58699D;
-$lightGrey: #E1E5EE;
-$white: #fff;
-
-$montserrat: 'Montserrat', sans-serif;
-$roboto: 'Roboto', sans-serif;
-$fontSize: 20px;
-
+@import 'colors';
+@import 'fonts';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@700;900&display=swap');
 
-:root {
-    --darkBlue: #2A324B;
-    --greyBlue: #58699D;
-    --lightGrey: #E1E5EE;
-    --white: #fff;
-
-    --montserrat: 'Montserrat', sans-serif;
-    --roboto: 'Roboto', sans-serif;
-    --fontSize: 20px;
-}
 
 body {
     font-family: $montserrat;
@@ -38,7 +20,7 @@ div {
 }
 
 nav {
-    ul {
+    &.menu {
         width: 100%;
         list-style-type: none;
         display: flex;
@@ -58,7 +40,7 @@ nav {
             font-weight: 900;
             margin: 0;
 
-            &.clicked {
+            &.active {
                 background-color: $white;
                 color: $darkBlue;
             }
