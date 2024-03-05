@@ -1,15 +1,27 @@
+// Stiler for hele dokumentet
 body {
-    font-family: $fontFamily;
-    font-weight: $fontWeight;
-
-    background-color: $lightGrey;
+    font-family: $fontFamily; // Bruker en variabel for skrifttypen
+    font-weight: $fontWeight; // Bruker en variabel for skriftvekten
+    background-color: $lightGrey; // Bakgrunnsfargen er lys grå
 }
 
+// Stiler for hovedinnholdet
 main {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1650px;
-    background-color: $white;
+    margin: 0 auto; // Sentrerer innholdet horisontalt
+    display: flex; // Bruker flex-boksen for å organisere innholdet
+    flex-direction: column; // Innholdet organiseres i en kolonne
+    width: 100%; // Bredden er satt til 100%
+    max-width: 1650px; // Maksimal bredde er satt til 1650 piksler
+    background-color: $white; // Bakgrunnsfargen er hvit
+
+    // Stiler for listeelementene
+    li {
+        font-size: $fontSize-small; // Bruker en variabel for skriftstørrelsen
+        color: $darkBlue; // Tekstfargen er mørkeblå
+
+        // Stiler for lenkene inni listeelementene
+        a {
+            text-decoration: underline; // Legger til understrek på lenkene
+        }
+    }
 }

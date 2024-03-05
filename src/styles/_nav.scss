@@ -1,34 +1,32 @@
 .menu {
-    width: 100%;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 0;
-    margin: 0;
+    width: 100%; // Angir bredden til 100%
+    list-style-type: none; // Fjerner punktmerker fra listen
+    display: flex; // Bruker flexbox for å plassere elementene
+    justify-content: space-between; // Plasserer elementene med lik avstand mellom seg
+    gap: 1rem; // Setter en avstand på 1 rem mellom elementene
+    padding: 0; // Fjerner padding
+    margin: 0; // Fjerner margin
 
     li {
-        background-color: $darkBlue;
-        flex-grow: 1;
-        text-align: center;
-        padding: 2rem;
-        font-size: 1.5rem;
-        margin: 0;
-
+        background-color: $darkBlue; // Setter bakgrunnsfargen til $darkBlue
+        flex-grow: 1; // Tillater elementet å vokse og fylle tilgjengelig plass
+        text-align: center; // Sentrerer teksten horisontalt
+        padding: 2rem; // Setter padding på 2 rem
+        font-size: $fontSize-medium; // Setter fontstørrelsen til $fontSize-medium
+        margin: 0; // Fjerner margin
+        transition: 0.5s; // Legger til en overgangseffekt på 0.5 sekunder
 
         a {
-            text-decoration: none;
-            color: $white;
-            font-weight: 900;
+            color: $white; // Setter fargen til $white
+            font-weight: 900; // Setter fontvekten til 900 (bold)
         }
     }
 }
 
 .active {
-    background-color: $white !important;
+    background-color: $white !important; // Setter bakgrunnsfargen til $white med !important for å overstyre andre regler
 
     a {
-        color: $darkBlue !important;
+        color: $darkBlue !important; // Setter fargen til $darkBlue med !important for å overstyre andre regler
     }
-
 }
