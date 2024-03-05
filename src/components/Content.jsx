@@ -11,23 +11,25 @@ export default function Content() {
     }
 
     return (
-        <>
-            {
-                category ? (
-                    <>
-                        <h2 className="title">{firstUpper(content.header)}</h2>
-                        <ul>
-                            {content.map((entry, index) => (
-                                <li key={category + index}>
-                                    <h3>
-                                        <Link target="_blank" to={entry.url}>{entry.title}</Link>
-                                    </h3>
-                                </li>
-                            ))}
-                        </ul>
-                    </>
-                ) : null
-            }
-        </>
-    )
-}
+        <main>
+            <article>
+                {
+                    category ? (
+                        <>
+                            <h2 className="title">{firstUpper(content.header)}</h2>
+                            <ul>
+                                {content.map((entry, index) => (
+                                    <li key={category + index}>
+                                        <h3>
+                                            <Link target="_blank" to={entry.url}>{entry.title}</Link>
+                                        </h3>
+                                    </li>
+                                ))}
+                            </ul>
+                        </>
+                    ) : null
+                }
+            </article>
+        </main>
+        )
+    }

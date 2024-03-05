@@ -1,6 +1,6 @@
 @media (max-width: 956px) {
     body {
-        font-size: $fontSizeSmall;
+        font-size: 0.8rem;
     }
 
     div {
@@ -10,11 +10,6 @@
     .menu {
         ul {
             display: block;
-
-            li {
-                padding: 0.5rem;
-                font-size: $fontSize;
-            }
         }
     }
 

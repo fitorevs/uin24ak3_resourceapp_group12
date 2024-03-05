@@ -2,9 +2,27 @@
     color: $darkBlue;
 }
 
-#root {
+main {
     article {
         background-color: $white;
-        padding: 8rem;
+        padding: 4rem;
     }
+
+    h2.title {
+        color: $darkBlue;
+        text-align: left;
+
+    }
+
+    h3 {
+        color: $darkBlue;
+        text-align: left;
+
+
+        a {
+            color: $greyBlue;
+        }
+
+    }
+
 }

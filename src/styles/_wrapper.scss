@@ -1,14 +1,15 @@
 body {
     font-family: $fontFamily;
     font-weight: $fontWeight;
-    font-size: $fontSize;
+
     background-color: $lightGrey;
 }
 
-#root {
-    margin: 8rem auto;
+main {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 1650px;
+    background-color: $white;
 }
