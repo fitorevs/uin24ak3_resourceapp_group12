@@ -1,0 +1,23 @@
+
+main {
+    article {
+        background-color: $white; // Setter bakgrunnsfargen til hvit
+        padding: 4rem; // Legger til 4rem med padding
+    }
+
+    h2.title {
+        color: $darkBlue; // Setter tekstfargen til mørkeblå
+        text-align: left; // Justerer teksten til venstre
+        font-size: $fontSize-large; // Setter fontstørrelsen til verdien av $fontSize-large
+    }
+
+    h3 {
+        color: $darkBlue; // Setter tekstfargen til mørkeblå
+        text-align: left; // Justerer teksten til venstre
+
+        a {
+            color: $greyBlue; // Setter lenkefargen til gråblå
+        }
+    }
+
+}

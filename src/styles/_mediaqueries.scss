@@ -1,0 +1,28 @@
+@media (max-width: 956px) {
+    div {
+        margin: 0; // Setter margin til 0
+    }
+
+    .menu {
+        ul {
+            display: block; // Setter display til block
+        }
+    }
+
+    main {
+        padding: 2rem 2rem 8rem 2rem; // Setter padding
+    }
+}
+
+@media (max-width: 911px) {
+    .menu {
+        justify-content: center; // Sentrerer elementene
+        flex-flow: row wrap; // Bryter elementene til ny linje
+        gap: 0; // Setter avstand mellom elementene til 0
+
+        li {
+            flex-basis: 100%; // Setter flex basis til 100%
+            margin: 0 auto; // Sentrerer elementene horisontalt
+        }
+    }
+}

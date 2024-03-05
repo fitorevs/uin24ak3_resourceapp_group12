@@ -26,23 +26,21 @@ export default function Content() {
         return string.charAt(0).toUpperCase() + string.slice(1)
     }
 
-    // Linje 30 til 47: Sett opp et artikkel-kort med innholdet for denne kategorien.
+    // Linje 30 til 45: Sett opp et artikkel-kort med innholdet for denne kategorien.
     return (
-        <article className="content">
-            {/* Linje 33: firstUpper funksjonen kjøres for å gjøre om header verdien. */}
-            <h2 className="title">{firstUpper(content.header)}</h2>
-            <ul>
-                {/* Linje 36 til 44: Iterate content for å hente alle ressurser. Deretter legges de til som li-elementer for det tilhørende ul-elementet. */}
-                {content.map((entry, index) => (
-                    /* Linje 38: Liste-elementer må ha en key-verdi i React. */
-                    <li key={category + index}>
-                        <h3>
-                            {/* Linje 41: Sett opp selve lenken. target="_blank" brukes så brukeren forblir på nettsiden. */}
-                            <Link target="_blank" to={entry.url}>{entry.title}</Link>
-                        </h3>
-                    </li>
-                ))}
-            </ul>
-        </article>
+        <main>
+            <article>
+                <h2 className="title">{firstUpper(content.header)}</h2>
+                <ul>
+                    {content.map((entry, index) => (
+                        <li key={category + index}>
+                            <h3>
+                                <Link target="_blank" to={entry.url}>{entry.title}</Link>
+                            </h3>
+                        </li>
+                    ))}
+                </ul>
+            </article>
+        </main>
     )
 }
