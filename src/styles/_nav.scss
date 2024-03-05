@@ -8,6 +8,7 @@
     margin: 0; // Fjerner margin
 
     li {
+        font-family: $fontFamilyRoboto; // Bytter font family for nav delen
         background-color: $darkBlue; // Setter bakgrunnsfargen til $darkBlue
         flex-grow: 1; // Tillater elementet å vokse og fylle tilgjengelig plass
         text-align: center; // Sentrerer teksten horisontalt

@@ -9,22 +9,26 @@ export default function Nav() {
     const { category } = useParams();
     const categories = useContext(siteData)["key"]
     const content = useContext(siteData)
- 
+
     /* Linje 14 til 29: Bygg ut ul-element hvilket er menyen. */
     return (
-        <ul className="menu">
-            {/* Linje 17 til 27: Iterate categories, hvilket gir oss alle kategoriene. */}
-            {categories.map((cat, index) =>
-            (
-                /* Linje 20: Med className undersøker vi om cat (kategorien) er like slug-en (category). Hvis ja gjør denne knappen active. Om ikke fjern den aktive tilstanden. */
-                <li key={"category" + index} className={cat === category ? "active" : null}>
-                    {/* Linje 22 til 24: Sett opp selve lenken til kategorien. */}
-                    <Link to={"/category/" + cat}>
-                        {content[cat].header.toUpperCase()}
-                    </Link>
-                </li>
-            )
-            )}
-        </ul>
+        <header>
+            <nav>
+                <ul className="menu">
+                    {/* Linje 17 til 27: Iterate categories, hvilket gir oss alle kategoriene. */}
+                    {categories.map((cat, index) =>
+                    (
+                        /* Linje 20: Med className undersøker vi om cat (kategorien) er like slug-en (category). Hvis ja gjør denne knappen active. Om ikke fjern den aktive tilstanden. */
+                        <li key={"category" + index} className={cat === category ? "active" : null}>
+                            {/* Linje 22 til 24: Sett opp selve lenken til kategorien. */}
+                            <Link to={"/category/" + cat}>
+                                {content[cat].header}
+                            </Link>
+                        </li>
+                    )
+                    )}
+                </ul>
+            </nav>
+        </header>
     )
 }

@@ -10,7 +10,7 @@ export default function Content() {
 
     // Linje 12: Hent alle gyldige kategorier fra context-en siteData og lagre dem som validPages.
     const validPages = useContext(siteData)["key"]
-    
+
     // Linje 15 til 18: Hvis kategorien brukeren enten har trykket på eller skrevet selv ikke stemmer med de kategoriene vi vet finnes -- eller kategorien ikke er oppgitt -- set en standardverdi.
     if (!validPages.includes(category) || category === undefined) {
         // Linje 17: Bruk den første kategorien i validPages som standardverdi for category.
