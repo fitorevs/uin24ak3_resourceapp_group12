@@ -1,3 +1,4 @@
+/* Linje 2 til 78: Slik vi kom fram til kunne vi enten forandre tittlene her, i selve dataen, eller via JavaScript. Noen av disse er ganske komplekse, som at selve 'CMS' under-tittelen skal ha store bokstaver mens resten bare stor forbokstav. Det virket derfor enklere og mer effektiv å forandre titlene her. I tillegg har vi lagt til å bruke export (eksportere) variablen hvilket holder dataen. Dette er nødvendig for å lagre dataen her og bruker den gjennom en annen fil. */
 export const resources = [
     {
         title: "W3Schools",
